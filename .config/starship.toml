@@ -1,0 +1,12 @@
+format = '$os$directory$git_branch$time$line_break$character'
+
+[directory]
+truncation_length = 10
+truncate_to_repo = false
+truncation_symbol = '…/'
+
+[time]
+disabled = false
+
+[os]
+disabled = false
