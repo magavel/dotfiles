@@ -21,3 +21,6 @@ shell = "zsh"
 
 [plugins.starship]
 inline = 'eval "$(starship init zsh)"'
+
+[plugins.zsh-autocomplete]
+github = 'marlonrichert/zsh-autocomplete'
