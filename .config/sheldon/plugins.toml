@@ -24,3 +24,6 @@ inline = 'eval "$(starship init zsh)"'
 
 [plugins.zsh-autocomplete]
 github = 'marlonrichert/zsh-autocomplete'
+
+[plugins.zsh-syntax-highlighting]
+github = 'zsh-users/zsh-syntax-highlighting'
