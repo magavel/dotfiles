@@ -24,7 +24,7 @@ cursor:
   style:
     shape: Beam
     blinking: Always # Onだとtmuxで点滅しない
-  blink_interval: 500 # Golandと同じ点滅速度
+  blink_interval: 500 # GoLandと同じ点滅速度
   blink_timeout: 0
 
 live_config_reload: true
