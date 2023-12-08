@@ -32,4 +32,6 @@ live_config_reload: true
 key_bindings:
   - { key: Right, mods: Alt, chars: "\x1bf" }
   - { key: Left, mods: Alt, chars: "\x1bb" }
-  - { key: I,  mods: Command, action: ToggleViMode }
+  - { key: I, mods: Command, action: ToggleViMode }
+  - { key: Back, mods: Command, chars: "\x15" } # backward-kill-line (kill-whole-line)
+  - { key: Z, mods: Command, chars: "\x1f" } # undo
