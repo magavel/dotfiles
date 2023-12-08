@@ -35,3 +35,4 @@ key_bindings:
   - { key: I, mods: Command, action: ToggleViMode }
   - { key: Back, mods: Command, chars: "\x15" } # backward-kill-line (kill-whole-line)
   - { key: Z, mods: Command, chars: "\x1f" } # undo
+  - { key: Z, mods: Command|Shift, chars: "\x1br" }  # redo

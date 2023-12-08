@@ -10,3 +10,8 @@ bindkey '^U' backward-kill-line
 # *?_-.[]~=/&;!#$%^(){}<>
 # ↑デフォルト
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>' # スラッシュ(/)を単語単位でのカーソル移動に区切り文字として認識させる
+
+# bindkey "^_" undo
+# redoはデフォルトでバインドされていないので設定する
+# alacrittyからCommand + Shift + Zでエスケープシーケンス（\x1br）を送信してRedoを発火させる
+bindkey "^[r" redo
