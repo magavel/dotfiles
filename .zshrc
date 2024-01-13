@@ -15,3 +15,15 @@ export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>' # スラッシュ(/)を単語単位で
 # redoはデフォルトでバインドされていないので設定する
 # alacrittyからCommand + Shift + Zでエスケープシーケンス（\x1br）を送信してRedoを発火させる
 bindkey "^[r" redo
+
+# Homebrewでインストールしたコマンドに付属する補完が効くようにしている
+# 参考：https://docs.brew.sh/Shell-Completion
+# NOTE: なぜかghはeval "$(gh completion -s zsh)"だと補完が効かない
+#       ちなみにdockerはeval "$(docker completion zsh)"でもちゃんと補完効いた
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
