@@ -41,6 +41,7 @@ cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 cask "gather"
 cask "google-chrome"
+cask "google-cloud-sdk"
 cask "jetbrains-toolbox"
 cask "karabiner-elements"
 cask "nordvpn"
@@ -57,3 +58,4 @@ cask "zoom"
 mas "BetterSnapTool", id: 417375580
 mas "RunCat", id: 1429033973
 mas "Todoist", id: 585829637
+mas "Xcode", id: 497799835

@@ -27,3 +27,6 @@ then
   autoload -Uz compinit
   compinit
 fi
+
+# gcloud CLIの補完を有効にする
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
