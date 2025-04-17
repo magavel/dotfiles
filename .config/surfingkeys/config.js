@@ -48,3 +48,6 @@ settings.theme = `
     font-size: 20pt;
 }`;
 // click `Save` button to make above settings to take effect.</ctrl-i></ctrl-y>
+
+// my settings
+settings.hintAlign = 'left';
