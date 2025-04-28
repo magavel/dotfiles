@@ -30,3 +30,6 @@ fi
 
 # gcloud CLIの補完を有効にする
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+
+# fzfの設定
+export FZF_DEFAULT_OPTS='--reverse --height 12 --border'
