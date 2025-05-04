@@ -2,12 +2,12 @@
 
 [keyboard]
 bindings = [
-  { key = "Right", mods = "Alt", chars = "\\u001Bf" },
-  { key = "Left",  mods = "Alt", chars = "\\u001Bb" },
+  { key = "Right", mods = "Alt", chars = "\u001Bf" },
+  { key = "Left",  mods = "Alt", chars = "\u001Bb" },
   { key = "I", mods = "Command", action = "ToggleViMode" },
-  { key = "Back", mods = "Command", chars = "\\u0015" }, # backward-kill-line (kill-whole-line)
-  { key = "Z", mods = "Command", chars = "\\u001F" }, # undo
-  { key = "Z", mods = "Command|Shift", chars = "\\u001Br" },  # redo
+  { key = "Back", mods = "Command", chars = "\u0015" }, # backward-kill-line (kill-whole-line)
+  { key = "Z", mods = "Command", chars = "\u001F" }, # undo
+  { key = "Z", mods = "Command|Shift", chars = "\u001Br" },  # redo
 ]
 
 [general]
