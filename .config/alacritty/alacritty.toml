@@ -1,0 +1,68 @@
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "ToggleViMode"
+key = "I"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001F"
+key = "Z"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Br"
+key = "Z"
+mods = "Command|Shift"
+
+[general]
+live_config_reload = true
+
+[cursor]
+blink_interval = 500
+blink_timeout = 0
+
+[cursor.style]
+blinking = "Always"
+shape = "Beam"
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[scrolling]
+history = 10000
+
+[window.padding]
+x = 18
+
+[keyboard]
