@@ -4,10 +4,26 @@
 
 	// List of extensions which should be recommended for users of this workspace.
 	"recommendations": [
-		
+		"golang.go",
+		"hashicorp.terraform",
+		"ms-vsliveshare.vsliveshare",
+		"github.vscode-pull-request-github",
+		"github.vscode-github-actions",
+		"kaiwood.center-editor-window",
+		"cweijan.vscode-database-client2",
+		"ms-azuretools.vscode-docker",
+		"shadowndacorner.vscode-easymotion",
+		"tamasfe.even-better-toml",
+		"eamodio.gitlens",
+		"bierner.markdown-mermaid",
+		"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+		"buenon.scratchpads",
+		"vue.volar",
+		"redhat.vscode-yaml",
+		"zenn.zenn-preview"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
-		
+
 	]
 }
