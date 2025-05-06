@@ -1,0 +1,25 @@
+{
+    "window.commandCenter": true,
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 13,
+    "editor.renderWhitespace": "all",
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.activityBar.orientation": "vertical",
+    "database-client.autoSync": true,
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#303030"
+    },
+    "extensions.ignoreRecommendations": true,
+    "scratchpads.defaultFiletype": "md",
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
+    "[terraform-vars]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    }
+}

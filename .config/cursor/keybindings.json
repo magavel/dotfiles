@@ -1,0 +1,273 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Cursor Default
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+
+
+    // デフォルトショートカットの無効化
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "cmd+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+[",
+        "command": "-composer.previousChatTab",
+        "when": "composerFocused && !editorTextFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "cmd+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+]",
+        "command": "-composer.nextChatTab",
+        "when": "composerFocused && !editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.action.terminal.searchWorkspace",
+        "when": "terminalFocus && terminalProcessSupported && terminalTextSelected"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.view.search",
+        "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-quickInput.previous",
+        "when": "inQuickInput && quickInputType == 'quickPick'"
+    },
+
+
+    // 定義元へジャンプ
+    {
+        "key": "cmd+b",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    // 実装へジャンプ
+    {
+        "key": "alt+cmd+b",
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus"
+    },
+    // 左側サイドバーの表示切り替え
+    {
+        "key": "cmd+s",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    // 右側サイドバーの表示切り替え
+    {
+        "key": "alt+cmd+s",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    // 戻る
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    // 進む
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    // タブを連続で消しているときに誤ってウィンドウまで消してしまわないようにする
+    {
+        "key": "cmd+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    // 左側サイドバーの検索は見にくいのでQuick Searchに置き換える
+    {
+        "key": "shift+cmd+f",
+        "command": "workbench.action.quickTextSearch"
+    },
+    // vimのようなhalf page scrollを再現する
+    {
+        "key": "ctrl+u",
+        "command": "editorScroll",
+        "args": {
+            "to": "up",
+            "by": "halfPage",
+            "revealCursor": true
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editorScroll",
+        "args": {
+            "to": "down",
+            "by": "halfPage",
+            "revealCursor": true
+        },
+        "when": "editorTextFocus"
+    },
+    // コンテキストメニューを表示する
+    {
+        "key": "ctrl+c",
+        "command": "editor.action.showContextMenu",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+f10",
+        "command": "-editor.action.showContextMenu",
+        "when": "textInputFocus"
+    },
+    // プライマリーサイドバーのファイルツリー表示/非表示切り替え
+    {
+        "key": "cmd+1",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "explorerViewletVisible"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    // プライマリーサイドバーのGit表示/非表示切り替え
+    {
+        "key": "cmd+2",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "view.workbench.scm.visible"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    // プライマリーサイドバーのDatabase Client表示/非表示切り替え
+    {
+        "key": "cmd+3",
+        "command": "workbench.view.extension.github-cweijan-mysql"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "view.github.cweijan.mysql.visible"
+        // "command": "workbench.view.extension.github-cweijan-mysql"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    // 最初のタブグループにフォーカスする
+    {
+        "key": "alt+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    // 2番目のタブグループにフォーカスする
+    {
+        "key": "alt+2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    // 単語選択をJetBrainsライクなキーバインドに
+    {
+        "key": "ctrl+g",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    // gitのブランチ作成や切り替えをJetBrainsライクなキーバインドに
+    {
+        "key": "ctrl+v",
+        "command": "git.checkout"
+    },
+
+
+    // jumpy
+    // {
+    //     "key": "ctrl+;",
+    //     "command": "extension.jumpy-word",
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "ctrl+;",
+    //     "command": "extension.jumpy-exit",
+    //     "when": "editorTextFocus && jumpy.isJumpyMode"
+    // },
+    // {
+    //     "key": "tab",
+    //     "command": "extension.jumpy-line",
+    //     "when": "editorTextFocus && jumpy.isJumpyMode"
+    // }
+
+    
+    // EasyMotion
+    {
+        "key": "ctrl+;",
+        "command": "vscode-easymotion.jumpToWord",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "vscode-easymotion.cancelJump",
+        "when": "editorTextFocus && vscodeEasyMotionJumping"
+    },
+    {
+        "key": "alt+/",
+        "command": "-vscode-easymotion.jumpToWord",
+        "when": "editorTextFocus"
+    },
+
+    // 未整理
+    {
+        "key": "",
+    },
+]
