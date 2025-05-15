@@ -51,3 +51,5 @@ settings.theme = `
 
 // my settings
 settings.hintAlign = 'left';
+api.iunmap('<Ctrl-a>');
+api.iunmap('<Ctrl-e>');
